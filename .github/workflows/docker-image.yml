@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t vrengifo/docker-graphql:0.0.2 .
+        docker build -t vrengifo/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push vrengifo/docker-graphql:0.0.2
+        docker push vrengifo/docker-graphql:latest
       
     
 #    - name: Build the Docker image
